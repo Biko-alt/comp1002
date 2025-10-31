@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Order your favorite pizza online">
+    <title>Pizza Order From</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Sonimod Pizza</h1>
+    </header>
+
+    <!--MAIN CONTENT-->
+    <main>
+        <p>
+            Choose your favorite pizza from the options below and place your order!
+            <img src="_" alt="Pizza Logo" width="100" height="100" />
+        </p>
+
+        <!--ORDER FORM-->
+        <form action="#" method="post">
+
+            <!--Customer Information-->
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="customerName" required />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="customerPhone" placeholder="123-456-7890" required />
+
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" name="customerAddress" rows="3" placeholder="Enter address here..." required />
+            </fieldset>
+
+            <!--Pizza Selection-->
+            <fieldset>
+                <legend>Pizza Details</legend>
+
+                <label for="numPizzas">Number of Pizzas;</label>
+                <input type="number" id="numPizzas" name="numberOfPizzas" min="1" max="10" value="1" required />
+
+                <label for="size">Size (Slices):</label>
+                <select id="size" name="size">
+                    <option value="6">6 Slices (Small)</option>
+                    <option value="8">8 Slices (Medium)</option>
+                    <option value="10">10 Slices (Large)</option>
+                    <option value="12">12 Slices (Family Size)</option>
+                </select>
+
+                <p><strong>Shape:</strong></p>
+                <label><input type="radio" name="shape" value="round" checked> Round</label>
+                <label><input type="radio" name="shape" value="square" checked> Square</label>
+
+                <p><strong>Crust Type</strong></p>
+                <label><input type="radio" name="crust" value="thin" checked> Thin Crust</label>
+                <label><input type="radio" name="crust" value="deep" checked> Deep Dish</label>
+                <label><input type="radio" name="crust" value="stuffed" checked> Stuffed Crust</label>
+
+                <p><strong>Toppings:</strong></p>
+                <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+                <label><input type="checkbox" name="toppings" value="onions"> Onions</label>
+                <label><input type="checkbox" name="toppings" value="sausage"> Sausage</label>
+                <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label>
+                <label><input type="checkbox" name="toppings" value="extraCheese"> Extra Cheese</label>
+                <label><input type="checkbox" name="toppings" value="blackOlives"> Black Olives</label>
+                <label><input type="checkbox" name="toppings" value="greenPeppers"> Green Peppers</label>
+                <label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label>
+            </fieldset>
+
+            <!--Pickup or Delivery-->
+            <fieldset>
+                <legend>Order Tpye</legend>
+                <label><input type="radio" name="orderType" value="pickup" checked> Pickup</label>
+                <label><input type="radio" name="orderType" value="delivery" checked> Delivery</label>
+                <label><input type="radio" name="orderType" value="eatin" checked> Eat In</label>
+            </fieldset>
+
+            <!--Additional Notes-->
+            <fieldset>
+                <legend>Additional Notes</legend>
+                <label for="notes">Special Instructions:</label>
+                <textarea id="notes" name="specialInstructions" rows="4" cols="50" placeholder="Enter any special instructions here..."></textarea>
+            </fieldset>
+
+            <!--Submit Button-->
+            <div class="buttons">
+                <button type="submit">Place Order</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+    </main>
+    <!--FOOTER-->
+    <footer>
+    <p>&copy; 2025 Sonimdom Pizza. All rights reserved.</p>
+    </footer>
+</body>
+</html>
