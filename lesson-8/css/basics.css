@@ -67,13 +67,25 @@ p::first-line{
 }
 
 /* STEP 10: DECENDENT/CONTEXTUAL Selector - Make a selector that ONLY targets EM elements when they are contained by a Q element - set the text-transform to 'uppercase' - note how this avoids styling all the other EM elements on the page */
-
+q em{
+	background-color: red;
+	color: white;
+}
 
 /* STEP 11: CHILD/DIRECT-DESCENDENT Selector - Create a selector that targets EM elements ONLY when they are directly contained by a P element - set the color to red - note that the EM element inside the Q (which is a child of a P) is NOT affected */
-
+p > em{
+	color: hotpink;
+}
 
 /* STEP 12a: ADJACENT SIBLING Selectors - Build a selector that targets ONLY P elements that are next to an H2 element and they share the same parent - set the margin to '2em' */
-
+h2 + p{
+	margin: 2rem;
+}
 /* STEP 12b: GENERAL SIBLING Selectors - Adjust the selector above so that it targets ALL P elements that are siblings of an H2 element, sharing the same parent */
-
+h2 ~ p{
+	padding: 2rem;
+}
 /* STEP 13: GROUPED Selectors - Finally, Add one last CSS rule that sets the font-family to 'Impact' for both H1 and H2 elements by separating the element selectors with a comma */
+h1, h2, h3 {
+	text-shadow: 3px 3px 1px black(69, 214, 47);
+}
