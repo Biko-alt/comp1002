@@ -32,7 +32,7 @@ main aside {
 	background-repeat: no-repeat;
 	background-position: top right;
 */
-class-selector{
+.new-feature{
 	display: inline-block;
 	padding-right: 25px;
 	background-image: url("../images/new.png");
@@ -42,7 +42,7 @@ class-selector{
 
 
 /* STEP 4: ID Selector - Create a selector that targets the specific element id (emailAddress) for the email form field on the home page, and set the font-weight property to 'bold' */
-id-selector{
+#emailAddress {
 	font-weight: bold;
 }
 
@@ -52,7 +52,7 @@ id-selector{
 	background-repeat: no-repeat;
 	background-position: top left;
 */
-attribute-selector{
+a[rel="external"]{
 	padding-left: 20px;
 	background-image: url("../images/new.png");
 	background-repeat: no-repeat;
@@ -67,28 +67,28 @@ main a {
 	font-weight: bold;
 }
 /* STEP 6: PSEUDOCLASS Selector - Type a selector that targets A elements (hyperlinks) that are a decendent of the MAIN element (hint: see rule just above), and that are currently being hovered over by the mouse pointer - set the text-decoration to 'underline' and the color to orange */
-pseudo-class{
+main a:hover{
 	text-decoration: underline;
 	color: orange;
 }
 
 /* STEP 7: PSEUDOELEMENT Selector - Build a selector below that targets the first letter of a BLOCKQUOTE element, then set the font-size to '2em' */
-pseudo-element{
+blockquote::first-letter{
 	font-size: 2em;
 }
 
 /* STEP 8: DECENDENT/CONTEXTUAL Selector - Type a selector that targets P elements that are contained by a FOOTER element, and set the text-align property to 'right' */
-decendent-selector{
+footer p{
 	text-align: right;
 }
 
 
 /* STEP 9: CHILD/DIRECT-DESCENDENT Selector - Assemble a CSS selector below that only targets P elements that are directly descended from a SECTION element, and set the text-indent property to '3em' */
-direct-descendent{
+section > p{
 	text-indent: 3em;
 }
 
 /* STEP 10: GROUPED Selector - To wrap up, create a selector that sets the color to 'white' for H1, H2 and FOOTER elements */
-grouped-selector{
+h1, h2, footer{
 	color: white;
 }
