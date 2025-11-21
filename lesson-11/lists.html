@@ -3,43 +3,9 @@
 <head>
 	<title>Lists | COMP1002 HTML, CSS, and JS Fundamentals</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/lists.css">
 	<style>
-		html {
-			font-family: Helvetica, Arial, sans-serif;
-		}
-		/* STEP 5: Styling Lists (list-style-type, list-style-position, list-style-image) */
-		/* STEP 5a: list-style-type (none | square | circle | disc) */
-		ul {
-
-		}
-		/* STEP 5b: Manipulate the list-style-position (inside | outside) in the rule above */
-		/* STEP 5c: Substitute regular list markers with images (list-style-image) in the rule just below */
-		ul {
-
-		}
-		/* STEP 5d: list-style-type (armenian | decimal | decimal-leading-zero | georgian | lower/upper-alpha | lower-greek | lower-latin | lower/upper-roman) - change in the rule below */
-		ol {
-			/* list-style-type: upper-latin; */
-		}
-		/* STEP 6: Laying Out Lists horizontally - use display: inline-block or inline */
-		li {
-
-		}
-		/* STEP 7: Targetting nested lists with contextual selectors - comment out all above declarations first */
-		ul ul {
-
-		}
-		ul ul ul {
-
-		}
-		/* STEP 8: Target specific levels of list items with direct-descendent selectors */
-
-		h1 img {
-			float: right;
-		}
-		/* STEP 9: Collect all above embedded CSS styles here and place them in an external CSS file */
-
-		/* STEP 10: Add a LINK element to this page, attaching the new external CSS file */
+		
 	</style>
 </head>
 <body>
@@ -49,15 +15,67 @@
 	<main>
 		<!-- STEP 1: Build a simple Unordered List -->
 		<h2>Unordered List</h2>
+		<ul>
+			<li>flour</li>
+			<li>milk</li>
+			<li>eggs</li>
+			<li>sugar</li>
+			<li>baking powder</li>
+		</ul>
 
 		<!-- STEP 2: Build a simple Ordered List -->
 		<h2>Ordered List</h2>
+		<ol>
+			<li>Preheat oven to 350°F (175°C).</li>
+			<li>Mix dry ingredients together.</li>
+			<li>Add wet ingredients and stir until smooth.</li>
+			<li>Pour batter into greased baking pan.</li>
+			<li>Bake for 30 minutes or until golden brown.</li>
+		</ol>
 
 		<!-- STEP 3: Build a Definition List -->
 		<h2>Definition List</h2>
+			<dl>
+				<dt>HTML</dt>
+				<dd>HyperText Markup Language - the standard markup language for creating web pages.</dd>
 
+				<dt>CSS</dt>
+				<dd>Cascading Style Sheets - a style sheet language used for describing the presentation of a document written in HTML or XML.</dd>
+
+				<dt>JavaScript</dt>
+				<dd>A programming language commonly used to create interactive effects within web browsers.</dd>
+			</dl>
 		<!-- STEP 4: Build a nested list -->
 		<h2>Nested Lists</h2>
+		<ul>
+			<li>Fruits
+				<ul>
+					<li>Apples</li>
+					<li>Bananas</li>
+					<li>Oranges
+						<ul>
+							<li>Navel</li>
+							<li>Blood</li>
+							<li>Mandarin</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Vegetables
+				<ul>
+					<li>Carrots</li>
+					<li>Broccoli</li>
+					<li>Spinach</li>
+				</ul>
+			</li>
+			<li>Dairy
+				<ul>
+					<li>Milk</li>
+					<li>Cheese</li>
+					<li>Yogurt</li>
+				</ul>
+			</li>
+		</ul>
 
 	</main>
 	<footer>
