@@ -1,0 +1,171 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html body {
+    height: 100%;
+    background: #0b0c0f;
+    font-family: "Open Sans", "system-ui", sans-serif; 
+    color: #fff;
+}
+
+/* Poster Container */
+.poster {
+    width: min(980px, 92vw);
+    height: 1400px;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(180deg, rgba(2,6,27,0.15), rgba(5,10,40,0.55)), #071026;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+/* Background Image */
+.poster::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/poster-bg.jpg");
+    background-size: cover;
+    background-position: center -8%;
+    opacity: 0.9;
+    filter: saturate(0.85) contrast(0.95);
+    transform-origin: center;
+    transition: transform 700ms ease;
+    z-index: 0;
+}
+
+.poster:hover::before {
+    transform: scale(1.02);
+}
+
+/* Content Container */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Title */
+h1.title {
+    font-family: "Anton", sans-serif;
+    font-size: 4.5rem;
+    color: #ffebee;
+    text-shadow: 0 14px 28px rgba(0, 0, 0, 0.58);
+    line-height: 0.85;
+    margin-left: 6%;
+    transition: transform 400ms ease;
+}
+
+.poster:hover h1.title {
+    transform: translateY(-8px);
+}
+
+/* Taglines */
+.tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #ffcdd2;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    margin-left: 8%;
+    transition: transform 400ms ease;
+}
+
+/* Credits box */
+.credits {
+    align-self: flex-end;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    color: #e0e0e0;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    transition: background 300ms ease;
+}
+
+.credits h2{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #ffebee;
+}
+
+/* Links Section */
+.links {
+    display:flex;
+    margin-top: 1rem;
+    margin-left: 4%;
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #bbdefb;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid #bbdefb;
+    border-radius: 4px;
+    transition: background 300ms ease, color 300ms ease;
+}
+
+.links a:hover {
+    background: #bbdefb;
+    color: #0b0c0f;
+}
+
+/* Decorative figure */
+.poster-fig {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    opacity: 0.85;
+    transition: transform 500ms ease;
+    z-index: 1;
+}
+
+.poster-fig img {
+    width: 100%;
+    height: auto;
+}
+
+.poster-fig figcaption {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Legal Text */
+.legal {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.625rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1.title {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1.125rem;
+    }
+
+    .poster-fig {
+        width: 60%;
+    }
+}
