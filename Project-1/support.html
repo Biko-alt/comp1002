@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Support - Sony TR-63</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body clas="site">
+        <header class="site-header">
+            <div class="brand">
+                <img src="images/sony-logo.png" alt="Sony Logo" class="logo" />
+                <h1>Sony TR-63 - The Pocket Transistor</h1>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-link current">Promotion</a>
+                <a href="about.html" class="nav-link current">About</a>
+                <a href="reviews.html" class="nav-link current">Rate & Reviews</a>
+                <a href="support.html" class="nav-link current">Support</a>
+                <a href="corporate.html" class="nav-link current">Corporate</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <h2>Customer Support</h2>
+                <p>For assistance with your Sony TR-63, please contact our customer support team:</p>
+
+                <form id="support" class="form-vertical" onsubmit="return false;">
+                    <label for="ticket-name">Name</label>
+                    <input type="text" id="ticket-name" name="ticket-name" required />
+
+                    <label for="ticket-email">Email</label>
+                    <input type="email" id="ticket-email" name="ticket-email" required />
+
+                    <label for="ticket-issue">Issue Description</label>
+                    <textarea id="ticket-issue" name="ticket-issue" rows="5" required></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+
+                <div id="form-response" class="form-response" aria-live="polite"></div>
+                <p class="muted-text">Our support team is available Monday to Friday, 9 AM to 5 PM EST. We aim to respond to all inquiries within 24-48 hours.
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <nav class="footer-nav">
+                <a href="index.html" class="footer-link">Promotion</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="reviews.html" class="footer-link">Rate & Reviews</a>
+                <a href="support.html" class="footer-link">Support</a>
+                <a href="corporate.html" class="footer-link">Corporate</a>
+            </nav>
+            <small>&copy; 2024 Sony Corporation. All rights reserved.</small>
+        </footer>
+
+        <script src="scripts.js" defer></script>
+    </body>
+</html>
