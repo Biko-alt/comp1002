@@ -127,7 +127,6 @@ h1.title {
     transition: transform 500ms ease;
     z-index: 1;
 }
-
 .poster-fig img { 
     width: 100%;
     height: auto;
